@@ -1,10 +1,5 @@
+/* The MapMyVisitors globe sizes itself to its parent's width, so cap the wrapper. */
 .visitor-map {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.visitor-map img,
-.visitor-map canvas {
-  max-width: 300px;
+  width: 220px;
+  margin: 1.5rem auto;
 }
