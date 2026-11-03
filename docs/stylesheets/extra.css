@@ -29,15 +29,25 @@
   --md-code-bg-color: #151b23;
 }
 
+/* Set header colours explicitly: Material caches the old primary colour in
+   localStorage, which would otherwise override the variables above. */
 .md-header,
 .md-tabs {
+  background-color: #f6f8fa !important;
+  color: #1f2328 !important;
   border-bottom: 1px solid #d0d7de;
   box-shadow: none;
 }
 
 [data-md-color-scheme="slate"] .md-header,
 [data-md-color-scheme="slate"] .md-tabs {
+  background-color: #151b23 !important;
+  color: #e6edf3 !important;
   border-bottom-color: #3d444d;
+}
+
+.md-tabs__link {
+  color: inherit;
 }
 
 .md-footer {
