@@ -1,0 +1,50 @@
+site_name: Puzhao Zhang
+site_url: https://puzhao8.github.io/
+repo_url: https://github.com/puzhao8
+
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Source Serif 4
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Research: research.md
+  - Publications: publications.md
+  - Projects: projects.md
+  - CV: cv.md

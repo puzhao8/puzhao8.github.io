@@ -1,0 +1,10 @@
+.visitor-map {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.visitor-map img,
+.visitor-map canvas {
+  max-width: 300px;
+}
