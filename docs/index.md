@@ -1,20 +1,26 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Puzhao Zhang
 
-Earth observation scientist at **DHI**. I map wetlands and surface water at global scale
-from Sentinel-1/2 time series, using Google Earth Engine and deep learning.
+**DHI**
 
-[Publications](publications.md){ .md-button .md-button--primary }
-[Research](research.md){ .md-button }
+I am a researcher at DHI working on the mapping and monitoring of wetlands and surface water
+from satellite Earth observation. My work combines Sentinel-1 and Sentinel-2 time series,
+Google Earth Engine and deep learning to produce global wetland products, basin-level
+statistics and validated accuracy assessments, in support of indicators such as SDG 6.6.1.
 
-## News
+## Research interests
 
-- *2026* - Global Wetland Watch statistics by HydroBASINS basin (lv06, lv08, lv12).
-- *TODO* - add recent papers, talks and awards here.
+- Global wetland and surface-water mapping from optical and radar time series
+- Change detection and time-series analysis of inundation dynamics
+- Deep learning for land-cover segmentation
+- Sampling design and accuracy assessment of large-area map products
 
-## Links
+## Contact
 
-[GitHub](https://github.com/puzhao8) ·
-[Google Scholar](#) ·
-[ORCID](#) ·
-[ResearchGate](#) ·
-puzh@dhigroup.com
+Email: [puzh@dhigroup.com](mailto:puzh@dhigroup.com)  
+Code: [github.com/puzhao8](https://github.com/puzhao8)

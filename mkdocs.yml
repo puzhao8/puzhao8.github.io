@@ -1,6 +1,7 @@
 site_name: Puzhao Zhang
+site_description: Research homepage of Puzhao Zhang, DHI - satellite mapping of wetlands and surface water.
 site_url: https://puzhao8.github.io/
-repo_url: https://github.com/puzhao8
+copyright: "&copy; 2026 Puzhao Zhang"
 
 theme:
   name: material
@@ -11,8 +12,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - toc.integrate
-    - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -36,6 +35,16 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/puzhao8
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:puzh@dhigroup.com
+      name: Email
+
 extra_css:
   - stylesheets/extra.css
 
@@ -46,5 +55,4 @@ nav:
   - Home: index.md
   - Research: research.md
   - Publications: publications.md
-  - Projects: projects.md
-  - CV: cv.md
+  - Software and Data: projects.md

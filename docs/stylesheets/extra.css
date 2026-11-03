@@ -1,4 +1,4 @@
-/* GitHub-like colour scheme (Primer palette) */
+/* Formal research homepage, neutral GitHub-like palette (Primer) */
 [data-md-color-scheme="default"] {
   --md-default-bg-color: #ffffff;
   --md-default-fg-color: #1f2328;
@@ -9,9 +9,11 @@
   --md-accent-fg-color: #0969da;
   --md-typeset-a-color: #0969da;
   --md-footer-bg-color: #f6f8fa;
+  --md-footer-bg-color--dark: #f6f8fa;
   --md-footer-fg-color: #59636e;
   --md-footer-fg-color--light: #59636e;
   --md-code-bg-color: #f6f8fa;
+  --rule-color: #d0d7de;
 }
 
 [data-md-color-scheme="slate"] {
@@ -24,9 +26,11 @@
   --md-accent-fg-color: #4493f8;
   --md-typeset-a-color: #4493f8;
   --md-footer-bg-color: #151b23;
+  --md-footer-bg-color--dark: #151b23;
   --md-footer-fg-color: #9198a1;
   --md-footer-fg-color--light: #9198a1;
   --md-code-bg-color: #151b23;
+  --rule-color: #3d444d;
 }
 
 /* Set header colours explicitly: Material caches the old primary colour in
@@ -35,7 +39,7 @@
 .md-tabs {
   background-color: #f6f8fa !important;
   color: #1f2328 !important;
-  border-bottom: 1px solid #d0d7de;
+  border-bottom: 1px solid var(--rule-color);
   box-shadow: none;
 }
 
@@ -43,57 +47,65 @@
 [data-md-color-scheme="slate"] .md-tabs {
   background-color: #151b23 !important;
   color: #e6edf3 !important;
-  border-bottom-color: #3d444d;
 }
 
 .md-tabs__link {
   color: inherit;
 }
 
-.md-footer {
-  border-top: 1px solid #d0d7de;
-}
-
-[data-md-color-scheme="slate"] .md-footer {
-  border-top-color: #3d444d;
-}
-
-[data-md-color-scheme="default"] { --md-footer-bg-color--dark: #f6f8fa; }
-[data-md-color-scheme="slate"] { --md-footer-bg-color--dark: #151b23; }
-
-.md-typeset .md-button {
-  color: var(--md-typeset-a-color);
-  border-color: var(--md-typeset-a-color);
-}
-
-.md-typeset .md-button:hover {
-  color: var(--md-typeset-a-color);
-  background-color: transparent;
-}
-
-.md-typeset .md-button--primary {
-  background-color: #1f883d;
-  border-color: #1f883d;
-  color: #ffffff;
-}
-
+.md-footer,
 .md-footer-meta {
-  border-top: 1px solid #d0d7de;
+  border-top: 1px solid var(--rule-color);
 }
 
 .md-copyright,
-.md-copyright__highlight {
+.md-copyright__highlight,
+.md-social__link {
   color: var(--md-footer-fg-color);
 }
 
-[data-md-color-scheme="slate"] .md-footer-meta {
-  border-top-color: #3d444d;
+/* Reading column, centred, as on a paper or CV */
+.md-content__inner {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
-.md-typeset .md-button--primary:hover {
-  background-color: #1a7f37;
-  border-color: #1a7f37;
-  color: #ffffff;
+.md-typeset {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0 0 0.4em;
+}
+
+.md-typeset h2 {
+  color: var(--md-default-fg-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  border-bottom: 1px solid var(--rule-color);
+  padding-bottom: 0.25em;
+  margin: 2em 0 0.8em;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+  border: 0;
+  border-top: 2px solid var(--md-default-fg-color);
+  border-bottom: 2px solid var(--md-default-fg-color);
+  box-shadow: none;
+}
+
+.md-typeset table:not([class]) th {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--rule-color);
 }
 
 /* The MapMyVisitors globe sizes itself to its parent's width, so cap the wrapper. */
